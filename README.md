@@ -6,7 +6,7 @@
 ![screenshot_20210912_051348](https://user-images.githubusercontent.com/21228616/132971986-7e83d1a1-ca79-4f33-8b14-ee27917a9bf3.png)
 ### News page : 
 ![screenshot_20210912_051417](https://user-images.githubusercontent.com/21228616/132971989-7e8641e0-fc1f-4922-ae34-7b84bc9f4243.png)
-##Covid statistics : 
+## Covid statistics : 
 ![screenshot_20210912_051444](https://user-images.githubusercontent.com/21228616/132971990-c057d42d-0e14-4531-afb7-e9fadb343d95.png)
 ## vaccination database in  admin panel : 
 ## ![screenshot_20210912_051708](https://user-images.githubusercontent.com/21228616/132972013-f00d5bf3-7347-4929-879b-593799c88d9e.png)
