@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1024.0" style="-fx-background-color: #2b2e4a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="advice.AdviceController">
+   <children>
+      <WebView fx:id="web" layoutX="115.0" layoutY="76.0" prefHeight="626.0" prefWidth="794.0" />
+      <HBox alignment="CENTER" layoutX="115.0" layoutY="-3.0" prefHeight="80.0" prefWidth="794.0" style="-fx-background-color: #0099e5;">
+         <children>
+            <Label text="Latest Covid 19 Advices" textFill="WHITE">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <ImageView fitHeight="63.0" fitWidth="72.0" layoutX="934.0" layoutY="342.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/right.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="72.0" layoutX="23.0" layoutY="342.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/left.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="21.0" layoutY="405.0" text="Previous" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="947.0" layoutY="405.0" text="Next" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="previous" layoutX="14.0" layoutY="339.0" prefHeight="96.0" prefWidth="83.0" text="  " />
+      <JFXButton fx:id="next" layoutX="921.0" layoutY="339.0" onAction="#getNews" prefHeight="96.0" prefWidth="92.0" text="   " />
+      <ImageView fitHeight="54.0" fitWidth="53.0" layoutX="28.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/home.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="28.0" layoutY="63.0" text="Home" textFill="#38cde4">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="Home" layoutX="28.0" layoutY="14.0" onAction="#HomeClicked" prefHeight="53.0" prefWidth="53.0" text="   " />
+   </children>
+</AnchorPane>

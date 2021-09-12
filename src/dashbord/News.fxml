@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.HTMLEditor?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="552.0" prefWidth="700.0" style="-fx-background-color: f9f6f7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashbord.NewsController">
+   <children>
+      <HTMLEditor fx:id="html" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="24.0" layoutY="14.0" prefHeight="410.0" prefWidth="826.0" />
+      <HBox alignment="CENTER" layoutX="6.0" layoutY="521.0" prefHeight="42.0" prefWidth="888.0">
+         <children>
+            <Label fx:id="succes" textFill="#269599">
+               <font>
+                  <Font name="Tahoma" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="14.0" layoutY="430.0" prefHeight="71.0" prefWidth="865.0">
+         <children>
+            <JFXButton fx:id="clear" onAction="#clearAll" style="-fx-background-color: e84545;" text="Clear All" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="2.0" left="20.0" right="20.0" top="2.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="add" onAction="#addNews" prefHeight="42.0" prefWidth="96.0" style="-fx-background-color: e84545;" text="Add" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="2.0" left="20.0" right="20.0" top="2.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

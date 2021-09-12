@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="742.0" prefWidth="1037.0" style="-fx-background-color: #f3f4f7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="statistics.StatisticsHomeController">
+   <children>
+      <HBox alignment="CENTER" layoutY="-4.0" prefHeight="111.0" prefWidth="1038.0" style="-fx-background-color: #0099e5;">
+         <children>
+            <Label prefHeight="79.0" prefWidth="721.0" text=" Welcome to Covid Statistics" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma Bold" size="50.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <ImageView fitHeight="54.0" fitWidth="53.0" layoutX="24.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/home.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="24.0" layoutY="64.0" text="Home">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="Home" layoutX="-1.0" layoutY="-4.0" onAction="#HomeClicked" prefHeight="111.0" prefWidth="110.0" text="   ">
+         <cursor>
+         </cursor></JFXButton>
+      <AnchorPane fx:id="anchor" layoutX="100.0" layoutY="198.0" prefHeight="586.0" prefWidth="869.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#000000e4" height="603.0" layoutX="-100.0" stroke="#00000021" strokeType="INSIDE" width="1038.0" />
+         </children></AnchorPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff4c4c" height="53.0" layoutX="523.0" layoutY="127.0" stroke="#ff4c4c" strokeType="INSIDE" style="-fx-background-color: black;" width="200.0" />
+      <HBox alignment="CENTER" layoutX="524.0" layoutY="125.0" prefHeight="53.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="deaths" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff4c4c" height="53.0" layoutX="60.0" layoutY="127.0" stroke="#ff4c4c" strokeType="INSIDE" style="-fx-background-color: black;" width="200.0" />
+      <HBox alignment="CENTER" layoutX="60.0" layoutY="123.0" prefHeight="53.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="country" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff4c4c" height="53.0" layoutX="287.0" layoutY="127.0" stroke="#ff4c4c" strokeType="INSIDE" style="-fx-background-color :: black;" width="200.0" />
+      <HBox alignment="CENTER" layoutX="287.0" layoutY="123.0" prefHeight="53.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="recovered" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff4c4c" height="53.0" layoutX="778.0" layoutY="127.0" stroke="#ff4c4c" strokeType="INSIDE" style="-fx-background-color :: black;" width="200.0" />
+      <HBox alignment="CENTER" layoutX="775.0" layoutY="128.0" prefHeight="53.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="confirmed" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

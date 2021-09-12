@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="727.0" prefWidth="1041.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vaccination.VaccinController">
+   <children>
+      <HBox alignment="CENTER" layoutX="-1.0" prefHeight="89.0" prefWidth="1041.0" style="-fx-background-color: #0099e5;">
+         <children>
+            <Label text="Vaccination form" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma Bold" size="50.0" />
+               </font>
+               
+            </Label>
+         </children>
+      </HBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="662.0" layoutX="-4.0" layoutY="87.0" stroke="#2b2e4a" strokeType="INSIDE" width="518.0" />
+      <JFXTextField fx:id="firstName" focusColor="BLACK" layoutX="37.0" layoutY="110.0" prefHeight="48.0" prefWidth="199.0" promptText="First name" style="-fx-text-fill: black;" unFocusColor="BLACK">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="lastName" focusColor="BLACK" layoutX="284.0" layoutY="110.0" prefHeight="48.0" prefWidth="199.0" promptText="Last name" style="-fx-text-fill: black;" unFocusColor="#0d0000">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="age" focusColor="BLACK" layoutX="33.0" layoutY="182.0" prefHeight="48.0" prefWidth="53.0" promptText="age" style="-fx-text-fill: black;" unFocusColor="#070000">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="33.0" layoutY="254.0" text="Gende :" wrapText="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="adress" focusColor="BLACK" layoutX="37.0" layoutY="372.0" prefHeight="48.0" prefWidth="422.0" promptText="Address " style="-fx-text-fill: black;" unFocusColor="BLACK">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="email" focusColor="BLACK" layoutX="37.0" layoutY="447.0" prefHeight="48.0" prefWidth="422.0" promptText="Email" style="-fx-text-fill: black;" unFocusColor="BLACK">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="phone" focusColor="BLACK" layoutX="40.0" layoutY="521.0" prefHeight="48.0" prefWidth="422.0" promptText="Phone number" style="-fx-text-fill: black;" unFocusColor="BLACK">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="profession" focusColor="BLACK" layoutX="37.0" layoutY="593.0" prefHeight="48.0" prefWidth="430.0" promptText="profession" style="-fx-text-fill: black;" unFocusColor="BLACK">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="nin" focusColor="BLACK" layoutX="37.0" layoutY="668.0" prefHeight="48.0" prefWidth="430.0" promptText="National insurance number" style="-fx-text-fill: black;" unFocusColor="BLACK">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="534.0" layoutY="110.0" prefHeight="63.0" prefWidth="442.0" text="- Did you have a positive test (pcr or antigenic) in the last three months ?" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="firstQ" layoutX="635.0" layoutY="183.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" selected="true" text="yes">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="yesno" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="firstQ1" layoutX="782.0" layoutY="183.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" text="no" toggleGroup="$yesno">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="535.0" layoutY="214.0" prefHeight="63.0" prefWidth="280.0" text="- Do you have a fever today ?" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="secondQ" layoutX="635.0" layoutY="272.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" selected="true" text="yes">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="ok" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="secondQ1" layoutX="782.0" layoutY="272.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" text="no" toggleGroup="$ok">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="529.0" layoutY="305.0" prefHeight="99.0" prefWidth="507.0" text=" - Do you have allergy anticedents for certain substances or with other vaccines ?" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="thirdQ" layoutX="640.0" layoutY="394.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" selected="true" text="yes">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="yesno2" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="thirdQ1" layoutX="787.0" layoutY="394.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" text="no" toggleGroup="$yesno2">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="536.0" layoutY="419.0" prefHeight="63.0" prefWidth="422.0" text="- Are you pregnant or have a cronic disease ?" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="fourthQ" layoutX="646.0" layoutY="479.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" selected="true" text="yes">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="yesno3" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="fourthQ1" layoutX="793.0" layoutY="479.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" text="no" toggleGroup="$yesno3">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="537.0" layoutY="517.0" prefHeight="63.0" prefWidth="422.0" text="- Which of the vaccines you prefer ?" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="combo" layoutX="865.0" layoutY="533.0" prefHeight="25.0" prefWidth="155.0" promptText="Choose one" style="-fx-background-color: white;" unFocusColor="#070000" />
+      <Label layoutX="540.0" layoutY="580.0" prefHeight="63.0" prefWidth="422.0" text="- Set a date for the vaccine" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="date" defaultColor="BLACK" layoutX="804.0" layoutY="591.0" prefHeight="30.0" prefWidth="171.0" style="-fx-background-color: white;">
+         <padding>
+            <Insets right="10.0" />
+         </padding></JFXDatePicker>
+      <RadioButton fx:id="male" layoutX="128.0" layoutY="305.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" selected="true" text="Male">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="female" layoutX="275.0" layoutY="305.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" text="Female" textFill="#030000" toggleGroup="$gender">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </RadioButton>
+      <JFXButton fx:id="cancel" layoutX="630.0" layoutY="668.0" onAction="#cancel" prefHeight="48.0" prefWidth="125.0" style="-fx-background-color: #e84545;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="submit" layoutX="793.0" layoutY="668.0" onAction="#submit" prefHeight="48.0" prefWidth="125.0" style="-fx-background-color: #e84545;" text="Submit" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

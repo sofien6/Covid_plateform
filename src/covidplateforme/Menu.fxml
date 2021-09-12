@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1024.0" style="-fx-background-color: #f3f4f7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="covidplateforme.MenuController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="89.0" prefWidth="1024.0" style="-fx-background-color: #0099e5;">
+         <children>
+            <Label text="Welcome To Covid Plateforme " textFill="WHITE">
+               <font>
+                  <Font name="Tahoma Bold" size="50.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </HBox>
+      <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="197.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/newspaper.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="234.0" layoutY="313.0" text="News">
+         <font>
+            <Font name="Tahoma" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="News" layoutX="197.0" layoutY="174.0" onAction="#newsClicked" prefHeight="130.0" prefWidth="130.0" style="-fx-background-radius: 50%;" text="    ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="447.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/graph-icon-png-51.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="Statistics" layoutX="447.0" layoutY="174.0" onAction="#statisticsClicked" prefHeight="130.0" prefWidth="130.0" style="-fx-background-radius: 50%;" text="    ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="704.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/advices-people-icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="197.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/—Pngtree—vector%20administration%20icon_4101272.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="230.0" layoutY="553.0" text="Admin">
+         <font>
+            <Font name="Tahoma" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="Admin" layoutX="197.0" layoutY="416.0" onAction="#adminClicked" prefHeight="130.0" prefWidth="130.0" text="  ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <Label layoutX="465.0" layoutY="313.0" text="Statistics">
+         <font>
+            <Font name="Tahoma" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="730.0" layoutY="313.0" text="Advices">
+         <font>
+            <Font name="Tahoma" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="447.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/kisspng-checklist-computer-icons-checkbox-list-5abf24c69b6921.1492522015224762306366.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="450.0" layoutY="553.0" text="Vaccin form">
+         <font>
+            <Font name="Tahoma" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="Vaccin" layoutX="448.0" layoutY="416.0" onAction="#vaccinClicked" prefHeight="130.0" prefWidth="130.0" text="   ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="704.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/info.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="721.0" layoutY="553.0" text="About Us">
+         <font>
+            <Font name="Tahoma" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="About" layoutX="704.0" layoutY="416.0" prefHeight="130.0" prefWidth="130.0" text="   ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="Advices" layoutX="704.0" layoutY="174.0" onAction="#adviceClicked" prefHeight="130.0" prefWidth="130.0" style="-fx-background-radius: 50%;" text="    ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+   </children>
+</AnchorPane>
