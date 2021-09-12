@@ -1,6 +1,6 @@
-# Complete Covid plateform with JavaFx  
+#  Covid plateform News and statistics with JavaFx  
 # Covid News (real time )
-### I used JAVA , CSS , JSON , JAVAFX , Figma (UI/UX) , 
+
 
 ### This is the home page : 
 ![screenshot_20210912_051348](https://user-images.githubusercontent.com/21228616/132971986-7e83d1a1-ca79-4f33-8b14-ee27917a9bf3.png)
