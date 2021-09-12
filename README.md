@@ -1,4 +1,4 @@
-# Complete Covid_plateform with JavaFx  
+# Complete Covid plateform with JavaFx  
 # Covid News (real time )
 ### I used JAVA , CSS , JSON , JAVAFX , Figma (UI/UX) , 
 
